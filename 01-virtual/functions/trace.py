@@ -1,0 +1,11 @@
+def add_vat(price, vat_rate):
+
+    return price * (100+vat_rate)/100
+
+orders = [ 189 , 200 , 350]
+
+for price in orders : 
+    final_amount = add_vat(price, 10)
+    print(f'{price} with vat {final_amount}')
+
+
